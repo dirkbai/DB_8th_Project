@@ -11,13 +11,67 @@ form {
   display: inline-block;
 }
 
+fieldset{
+  display: inline-block;
+  border: none;
+  margin: 1.3rem;
+  font-size: 1.2rem;
+}
+
+legend{
+  margin: 1.5rem 0;
+  color:  #f4ce42;
+}
+
+input:focus,
+textarea:focus {
+  border: solid 5px green;
+}
+
 .container{
   text-align: center;
 }
 .newsletter{
-  text-align: right;
-
+  text-align: left;
 }
+
+input[type="radio"]{
+  margin: 1.2rem;
+}
+
+select{
+  margin-top: 1rem;
+  width: 70%;
+  height: 2.5rem;
+}
+
+select, .label{
+  margin-left: 1.2rem;
+}
+
+
+textarea{
+  margin-top: 1rem;
+  margin-left: 1.2rem;
+  width: 90%;
+  height: 3rem;
+}
+
+#name, #e-mail, #retype_e-mail{
+  margin: 1.2rem 0 3rem 0;
+  height: 3rem;
+  width: 100%;
+}
+
+.label_nwsltt{
+  text-align: left;
+  width: 100%;
+}
+
+#sign_up{
+  font-size: .8rem;
+}
+
 
 
 /* Styles for larger screens */

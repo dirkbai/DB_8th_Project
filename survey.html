@@ -26,21 +26,23 @@
       <h2 class="Title">Survey</h2>
       <article class="card" role="article">
         <div class="flex">
-          <img class="photo" src= "img/concert01.jpg">
+          <img class="photo" src= "img/concert01.jpg" alt="concert">
           <div class="container">
             <form class = "survey">
               <fieldset>
                 <legend>Who is your favorite band member:</legend>
-                <p>Who is your favorite band member:</p>
-                <input type="radio" name="Bob" value="Bob"> Bob
-                <input type="radio" name="Hazzard" value="Hazzard"> Hazzard
-                <input type="radio" name="John" value="John"> John
-                <input type="radio" name="Sally" value="Sally"> Sally
+                <input type="radio" name="Bob" id="Bob" value="Bob"><label for="Bob">Bob</label>
+                <br>
+                <input type="radio" name="Hazzard" id="Hazzard" value="Hazzard"><label for="Hazzard">Hazzard</label>
+                <br>
+                <input type="radio" name="John" id="John" value="John"> <label for="John">John</label>
+                <br>
+                <input type="radio" name="Sally" value="Sally" id="Sally"><label for="Sally">Sally</label>
               </fieldset>
 
               <fieldset>
                 <legend>What is your favorite album:</legend>
-                <label for="albums">Select an Album</label>
+                <label for="albums" class="label">Select an Album</label>
                 <select id="albums" name="select album">
                   <option value="A Day Of Old">A Day Of Old</option>
                   <option value="Diamond Fireworks">Diamond Fireworks</option>
@@ -58,7 +60,7 @@
 
               <fieldset>
                 <legend>What is your favorite song:</legend>
-                <label for="favorite song">Type a song:</label>
+                <label for="favorite song" class="label">Type a song:</label>
                 <textarea id="favorite song"></textarea>
               </fieldset>
             </form>
@@ -68,17 +70,18 @@
       <h2 class="Title">Newsletter</h2>
       <article class="card">
         <div class="flex">
-          <img class="photo" src= "img/the_band.jpg">
+          <img class="photo" src= "img/the_band.jpg" alt="band_on_stage">
             <div class="container">
               <form class="newsletter">
                 <fieldset>
-                  <label for="name">Name:</label>
+                  <label for="name" class="label_nwsltt">Name:</label>
                   <input type ="text" id="name" name="textfield">
-                  <label for="e-mail">Email:</label>
+                  <label for="e-mail" class="label_nwsltt">Email:</label>
                   <input type ="email" id="e-mail" name="textfield">
-                  <label for="retype e-mail">Retype Email:</label>
-                  <input type ="email" id="retype e-mail" name="textfield">
-                  <button type="submit" class="btn">Sign Up</button>
+                  <label for="retype_e-mail" class="label_nwsltt">Retype Email:</label>
+                  <input type ="email" id="retype_e-mail" name="textfield">
+                  <button type="submit" class="btn" aria-describedby="sign_up">Sign Up</button>
+                  <p id="sign_up"> Sign Up to reseve news and updates from the band </p>
                 </fieldset>
               </form>
             </div>
