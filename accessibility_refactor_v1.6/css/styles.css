@@ -1,0 +1,247 @@
+/* Global Layout Set-up */
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  font-family: 'Open Sans', sans-serif;
+  color: white;
+  background: #2d2b30;
+}
+
+header {
+  background: url('../img/concert02_no_text.jpg') no-repeat top center ;
+  background-size: cover;
+  overflow: hidden;
+  min-height: 470px;
+}
+
+h1 {
+  margin-top: 9rem;
+  font-size: 3rem;
+  font-weight: 400;
+  text-transform: uppercase;
+  color: black;
+}
+
+h2 {
+  font-size: 2rem;
+  font-weight: 400;
+  color: #781125;
+}
+
+/* Link Styles */
+.btn {
+  padding: 0;
+  border: 0;
+}
+
+.btn {
+  -webkit-appearance: button;
+  font-weight: 600;
+  cursor: pointer;
+  color: #781125;
+  padding: 1.5rem;
+}
+
+
+
+.btn:hover{
+  background: #781125;
+  color: white;
+}
+
+a {
+  color: white;
+}
+
+a:hover {
+  color: #999;
+}
+
+/* Section Styles */
+
+nav {
+  width: 100%;
+  background: rgb(45, 43, 48);
+  min-height: 30px;
+  padding: 10px;
+  position: fixed;
+  text-align: center;
+}
+
+.nav {
+  display: flex;
+  justify-content: space-around;
+  font-weight: 700;
+  list-style-type: none;
+  margin: 0 auto;
+  padding: 0;
+}
+
+.nav .name {
+  display: block;
+  margin-right: auto;
+  color: white;
+  letter-spacing: 5px;
+}
+
+.nav li {
+  padding: 5px 10px 10px 10px;
+}
+
+.nav a {
+  transition: all .5s;
+}
+
+.nav a:hover {
+  color: white
+}
+
+
+
+.tag {
+  color: black;
+  padding: 10px;
+  letter-spacing: 5px;
+}
+
+.name{
+  font-weight: 300;
+}
+
+
+.tagline {
+  font-weight: 600;
+  padding: 20px;
+  text-transform: uppercase;
+  color: #781125
+}
+
+.card {
+  margin: 30px;
+  padding: 20px 40px 40px;
+  text-align: left;
+  border-top: 4px solid #781125;
+  clear: both;
+}
+.card:hover {
+  border-color: #96731A;
+}
+
+
+.photo{
+  display: block;
+  width: 200px;
+  height: 0%;
+  margin: 0 auto;
+}
+
+.information{
+  width: 100%;
+  text-align: center;
+  color: white;
+  /*display: inline-block;
+  position: absolute;*/
+}
+
+.Title{
+  font-size: 2rem;
+  text-transform: uppercase;
+  color: white;
+  margin-top: 10px;
+}
+
+/* Footer styles */
+
+footer {
+  width: 100%;
+  min-height: 30px;
+  padding: 20px 0 40px 20px;
+}
+
+footer .copyright {
+  top: -8px;
+  font-size: .75rem;
+}
+
+footer ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+footer ul li {
+  display: inline-block;
+}
+
+
+
+a.social {
+  display: inline-block;
+  margin-left: 5px;
+  opacity: .4;
+  transition: all .5s;
+}
+
+
+a.social:hover {
+  opacity: 1;
+}
+.clearfix {
+  clear: both;
+}
+
+/* Styles for larger screens */
+@media screen and (min-width: 840px) {
+
+  .flex {
+    display: -ms-flexbox;      /* TWEENER - IE 10 */
+    display: flex;
+    max-width: 1200px;
+    -ms-flex-pack: distribute;
+  }
+
+  header {
+
+  }
+
+  .nav {
+    max-width: 1200px;
+    padding: 0 30px;
+  }
+
+
+  main {
+    padding-top: 20px;
+  }
+
+  main p {
+    line-height: 1.6rem;
+  }
+
+  .card{
+    margin: 40px auto;
+    padding: 20px 40px 40px;
+    width: 80%;
+    max-width: 1000px;
+  }
+
+  .photo{
+    width: 30%;
+    margin: 20px 30px;
+  }
+
+  .information{
+    text-align: left;
+  }
+
+  footer {
+    font-size: 1.3rem;
+    max-width: 1200px;
+    margin: 40px auto;
+  }
+}
