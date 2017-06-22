@@ -69,9 +69,13 @@ textarea{
 }
 
 #sign_up{
-  font-size: .8rem;
+  font-size: 1rem;
 }
 
+#select_album, #select_bandmember, #type_song{
+    font-size: 1rem;
+    margin-left: 1.2rem;
+}
 
 
 /* Styles for larger screens */

@@ -6,7 +6,7 @@ table{
 }
 
 
-.heading{
+.caption, heading{
   font-size: 1.5rem;
   font-weight: bold;
   margin: 0;
@@ -17,7 +17,8 @@ tr{
   border-bottom: 2px solid white;
 }
 
-.pick{
-  width: 4%;
-  margin: 0 22%;
+.card .header_table{
+  width: 90%;
+  margin: 5%;
+  text-align: center;
 }
